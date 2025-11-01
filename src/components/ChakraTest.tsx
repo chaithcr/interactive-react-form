@@ -1,4 +1,4 @@
-// src/components/ChakraTest.tsx
+
 import React from "react";
 import {
   FormControl,
@@ -22,7 +22,6 @@ export default function ChakraTest() {
     formState: { errors },
   } = useForm<FormData>();
 
-  // ✅ This runs when Submit is clicked
   const onSubmit = (data: FormData) => {
     console.log("Form Data:", data);
     alert(`Submitted!\nEmail: ${data.email}\nUsername: ${data.username}`);
